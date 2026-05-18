@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>在校生の皆さんへ｜WAM ITカレッジ</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+	<a href="index.html" class="logo">
+	    WAM ITカレッジ
+	</a>
+
+    <nav>
+        <a href="index.html">ホーム</a>
+        <a href="school.html">学校概要</a>
+        <a href="subject.html">教育科目</a>
+        <a href="news.html">ニュース</a>
+        <a href="event.html">イベント</a>
+        <a href="student.html">在校生の皆さんへ</a>
+        <a href="entry.html">入学について</a>
+        <a href="contact.html">お問い合わせ</a>
+    </nav>
+</header>
+
+<section class="container">
+
+    <h2 class="section-title">在校生専用ページ</h2>
+
+    <div class="student-grid">
+
+        <!-- お知らせ -->
+        <div class="notice-box">
+
+            <div class="box-header">
+                <h3>学内お知らせ</h3>
+                <span class="update-time">
+                    最終更新：2026.05.17
+                </span>
+            </div>
+
+            <ul class="notice-list">
+                <li>
+                    課題提出期限のお知らせ
+                </li>
+
+                <li>
+                    授業資料を更新しました
+                </li>
+
+                <li>
+                    システムメンテナンス予定
+                </li>
+
+                <li>
+                    就職支援セミナー受付開始
+                </li>
+
+                <li>
+                    校内Wi-Fi接続障害について
+                </li>
+            </ul>
+
+        </div>
+
+
+        <!-- ログイン -->
+        <div class="login-box">
+
+            <div class="login-icon">
+                🎓
+            </div>
+
+            <h3>在校生ログイン</h3>
+
+            <p class="login-text">
+                学内システムへアクセスするには、
+                学生IDとパスワードを入力してください。
+            </p>
+
+            <label>学生ID</label>
+			<input
+			    type="text"
+			    id="studentId"
+			    placeholder="例：2501 309 20"
+			    maxlength="9"
+			>
+			
+            <label>パスワード</label>
+			<input
+			    type="password"
+			    id="password"
+			    placeholder="パスワードを入力"
+			>
+
+           <button onclick="login()">ログイン</button>
+		   <p id="login-message"></p>
+
+            <p class="login-note">
+                ※ 学外へのID・パスワード共有は禁止されています。
+            </p>
+			
+		<details class="password-help">
+
+		    <summary>
+		        IDやパスワードを忘れた方
+		    </summary>
+
+		    <div class="password-help-content">
+			
+				<p>
+		            IDは 入学年月・クラス番号・出席番号の数字のみを入力してください。
+		        </p>
+				
+		        <p>
+		            パスワードを忘れた方は、学長がよく買うものを思い出してください。
+		        </p>
+
+		        <p>
+		            不明な場合は職員までお問い合わせください。
+		        </p>
+
+		    </div>
+			
+
+		</details>
+			
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cta-section">
+
+  <div class="cta-content">
+
+    <h2>
+      未来への一歩を、ここから。
+    </h2>
+
+    <p>
+      ITスキルを身につけ、
+      新しいキャリアに挑戦してみませんか？
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="entry.html" class="btn-primary">
+        資料請求はこちら
+      </a>
+
+      <a href="contact.html" class="btn-secondary">
+        お問い合わせ
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+    © WAM ITカレッジ
+</footer>
+
+<script>
+
+function login(){
+
+    const id =
+        document.getElementById("studentId").value;
+
+    const password =
+        document.getElementById("password").value;
+
+    const message =
+        document.getElementById("login-message");
+
+
+
+    // 通常在校生ID
+    const normalIds = [];
+
+    for(let i = 301; i <= 319; i++){
+
+        normalIds.push("251130" + i);
+
+    }
+
+
+
+    // 特殊ID（20人目）
+    const hiddenId = "251130320";
+
+
+
+    // =====================
+    // 20人目
+    // =====================
+
+    if(
+        id === hiddenId
+        &&
+        password === "umaibou"
+    ){
+
+        message.style.color = "#22c55e";
+
+        message.textContent =
+            "追加アクセス権限を確認しました";
+
+
+
+        setTimeout(() => {
+
+            window.location.href =
+                "hidden.html";
+
+        }, 1200);
+
+
+
+    // =====================
+    // 通常ログイン
+    // =====================
+
+    }else if(
+
+        normalIds.includes(id)
+        &&
+        password === "umaibou"
+
+    ){
+
+        message.style.color = "#16a34a";
+
+        message.textContent =
+            "ログイン成功";
+
+
+
+        setTimeout(() => {
+
+            window.location.href =
+                "login.html";
+
+        }, 1000);
+
+
+
+    // =====================
+    // エラー
+    // =====================
+
+    }else{
+
+        message.style.color = "#dc2626";
+
+        message.textContent =
+            "学生IDまたはパスワードが違います";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>

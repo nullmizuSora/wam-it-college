@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>入学・施設見学｜WAM ITカレッジ</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+	<a href="index.html" class="logo">
+	    WAM ITカレッジ
+	</a>
+
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="school.html">学校概要</a>
+    <a href="subject.html">教育科目</a>
+    <a href="news.html">ニュース</a>
+    <a href="event.html">イベント</a>
+    <a href="student.html">在校生の皆さんへ</a>
+    <a href="entry.html">入学について</a>
+    <a href="contact.html">お問い合わせ</a>
+  </nav>
+</header>
+
+<section class="container entry-container">
+
+  <h2 class="section-title">入学・施設見学について</h2>
+
+  <!-- 入学案内 -->
+  <div class="card">
+
+    <h3>入学について</h3>
+
+    <p>
+      WAM ITカレッジでは、未経験からでも安心して学べる職業訓練コースを提供しています。<br>
+      プログラミング・Web制作・IT基礎を中心に、実践的なスキルを習得できます。
+    </p>
+
+    <p>
+      入学は随時相談可能で、説明会参加後に選考・手続きを行います。
+    </p>
+
+  </div>
+  
+  <!-- 見学 -->
+  <div class="card">
+
+    <h3>施設見学について</h3>
+
+	<img class="puzzle-img" src="../images/book.jpg" alt="book">
+    <p>
+      実際の授業環境や教室設備を見学できます。<br>
+      在校生の学習風景や教材もご覧いただけます。
+    </p>
+
+    <p>
+      見学は事前予約制となっております。
+    </p>
+
+  </div>
+
+  <!-- 見学スケジュール -->
+  <div class="card">
+
+    <h3>見学スケジュール</h3>
+
+    <p>
+      ・平日 10:00〜 / 13:00〜 / 15:00〜<br>
+      ・所要時間：約60分<br>
+      ・個別対応可能 (お気軽にお問い合わせください。)
+    </p>
+
+  </div>
+
+  <!-- 特徴 -->
+  <div class="card">
+
+    <h3>見学でわかること</h3>
+
+    <p>
+      ・授業の進め方<br>
+      ・教室・PC環境<br>
+      ・講師の指導スタイル<br>
+      ・在校生の雰囲気
+    </p>
+
+  </div>
+
+  <!-- 申込（簡易フォーム） -->
+  <div class="card">
+
+    <h3>見学・説明会申し込み</h3>
+
+    <p style="color:#6b7280; margin-bottom:20px;">
+      入学相談・施設見学をご希望の方は、以下よりお申し込みください。
+    </p>
+
+    <form class="form-box">
+
+      <div class="form-group">
+        <label>お名前 <span style="color:#dc2626;">※必須</span></label>
+        <input type="text" placeholder="例：山田太郎">
+      </div>
+
+      <div class="form-group">
+        <label>メールアドレス <span style="color:#dc2626;">※必須</span></label>
+        <input type="email" placeholder="example@mail.com">
+      </div>
+
+      <div class="form-group">
+        <label>電話番号</label>
+        <input type="text" placeholder="090-1234-5678">
+      </div>
+
+      <div class="form-group">
+        <label>希望内容</label>
+        <select>
+          <option>施設見学</option>
+          <option>入学相談</option>
+          <option>オンライン説明会</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>希望日時</label>
+        <input type="text" placeholder="例：平日 13:00〜">
+      </div>
+
+      <div class="form-group">
+        <label>ご質問・備考</label>
+        <textarea rows="4" placeholder="気になる点をご記入ください"></textarea>
+      </div>
+
+      <button type="button" onclick="sendRequest()">
+        申し込みを送信する
+      </button>
+
+    </form>
+
+    <p id="msg" style="margin-top:15px;"></p>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+
+  <div class="cta-content">
+
+    <h2>まずは、見てから決める。</h2>
+
+    <p>
+      教室の雰囲気や授業の進め方を、実際に体験できます。
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="contact.html" class="btn-primary">
+        お問い合わせ
+      </a>
+
+      <a href="student.html" class="btn-secondary">
+        在校生ページ
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  © WAM ITカレッジ
+</footer>
+
+<script>
+function sendRequest(){
+
+  const msg = document.getElementById("msg");
+
+  // まず送信受付
+  msg.style.color = "#16a34a";
+  msg.textContent = "お申し込みを受け付けました、送信中です...";
+
+  setTimeout(() => {
+    msg.textContent = "受付処理中...";
+  }, 1000);
+  
+  // 少し待ってから返信風メッセージ
+  setTimeout(() => {
+
+    msg.style.color = "#166534";
+    msg.textContent = "内容を確認のうえ、担当者よりご連絡いたします。お申込みありがとうございました。";
+
+  }, 4000); // 4秒後
+}
+</script>
+
+</body>
+</html>
