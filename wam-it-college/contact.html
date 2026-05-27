@@ -11,150 +11,170 @@
 <body>
 
 <header>
-	<a href="index.html" class="logo">
-	    WAM ITカレッジ
-	</a>
+  <a href="index.html" class="logo">WAM ITカレッジ</a>
 
-    <nav>
-        <a href="index.html">ホーム</a>
-        <a href="school.html">学校概要</a>
-        <a href="subject.html">教育科目</a>
-        <a href="news.html">ニュース</a>
-        <a href="event.html">イベント</a>
-        <a href="student.html">在校生の皆さんへ</a>
-        <a href="entry.html">入学について</a>
-        <a href="contact.html">お問い合わせ</a>
-    </nav>
+  <button class="hamburger" id="hamburger">☰</button>
+
+  <nav id="navMenu">
+    <a href="index.html">ホーム</a>
+    <a href="school.html">学校概要</a>
+    <a href="subject.html">教育科目</a>
+    <a href="news.html">ニュース</a>
+    <a href="event.html">イベント</a>
+    <a href="student.html">在校生の皆さんへ</a>
+    <a href="entry.html">入学について</a>
+    <a href="contact.html">お問い合わせ</a>
+  </nav>
 </header>
 
-<section class="container">
+    <section class="container">
 
-    <h2 class="section-title">お問い合わせ</h2>
+        <h2 class="section-title">お問い合わせ</h2>
 
-    <div class="form-box">
+        <div class="form-box">
 
-        <div class="form-group">
-            <label>お名前</label>
-            <input type="text" placeholder="例：山田太郎">
+            <div class="form-group">
+                <label>お名前</label>
+                <input type="text" placeholder="例：山田太郎">
+            </div>
+
+            <div class="form-group">
+                <label>メールアドレス</label>
+                <input type="email" placeholder="example@mail.com">
+            </div>
+
+            <div class="form-group">
+                <label>お問い合わせ種別</label>
+                <select>
+                    <option>入学について</option>
+                    <option>カリキュラムについて</option>
+                    <option>イベントについて</option>
+                    <option>その他</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>お問い合わせ内容</label>
+                <textarea placeholder="ご質問内容をご入力ください" rows="6"></textarea>
+            </div>
+
+            <button type="button" onclick="sendForm()">
+                送信する
+            </button>
+			
+			
+
+            <p id="loadingText" style="display:none; margin-top:10px; color:#16a34a;">
+                送信中...
+            </p>
+
+        </div>
+		
+		<div class="info-box" style="margin-top:20px; color:#6b7280;">
+			※名前・メールアドレスは任意の内容で構いません
+		</div>
+		
+        <div class="info-box" style="margin-top:20px; color:#6b7280;">
+            ※お問い合わせ内容によっては、回答までにお時間をいただく場合がございます。
         </div>
 
-        <div class="form-group">
-            <label>メールアドレス</label>
-            <input type="email" placeholder="example@mail.com">
-        </div>
+    </section>
 
-        <div class="form-group">
-            <label>お問い合わせ種別</label>
-            <select>
-                <option>入学について</option>
-                <option>カリキュラムについて</option>
-                <option>イベントについて</option>
-                <option>その他</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label>お問い合わせ内容</label>
-            <textarea placeholder="ご質問内容をご入力ください" rows="6"></textarea>
-        </div>
-
-        <button type="button" onclick="sendForm()">
-            送信する
-        </button>
-
-        <p id="loadingText" style="display:none; margin-top:10px; color:#16a34a;">
-            送信中...
+    <footer>
+        <p>© WAM ITカレッジ</p>
+        <p class="footer-note">
+            ※このサイトは個人の制作物であり、実在の教育機関・サービスとは関係ありません。
         </p>
+    </footer>
+
+    <!-- 返信モーダル -->
+    <div id="responseBox" class="response-box" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); align-items:center; justify-content:center;">
+
+        <div class="response-content" style="background:white; padding:40px; border-radius:20px; max-width:500px; text-align:center;">
+
+            <h3 style="color:#166534;">WAM ITカレッジ 事務局</h3>
+
+            <p id="responseText" style="margin:20px 0; line-height:1.8;"></p>
+
+            <button onclick="closeResponse()" class="btn-primary">
+                閉じる
+            </button>
+
+        </div>
 
     </div>
 
-    <div class="info-box" style="margin-top:20px; color:#6b7280;">
-        ※お問い合わせ内容によっては、回答までにお時間をいただく場合がございます。
-    </div>
+    <!-- 音 -->
+    <audio id="notifySound" src="sound/oto.mp3" preload="auto"></audio>
 
-</section>
+    <script>
 
-<footer>
-  <p>© WAM ITカレッジ</p>
-  <p class="footer-note">
-    ※このサイトは個人の制作物であり、実在の教育機関・サービスとは関係ありません。
-  </p>
-</footer>
+        function sendForm() {
 
-<!-- 返信モーダル -->
-<div id="responseBox" class="response-box" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); align-items:center; justify-content:center;">
+            const text = document.querySelector("textarea").value;
+            const loading = document.getElementById("loadingText");
+            const box = document.getElementById("responseBox");
+            const responseText = document.getElementById("responseText");
+            const sound = document.getElementById("notifySound");
+            const button = document.querySelector("button[type='button']");
+            const name = document.querySelectorAll("input")[0].value;
+            const email = document.querySelectorAll("input")[1].value;
 
-    <div class="response-content" style="background:white; padding:40px; border-radius:20px; max-width:500px; text-align:center;">
+            if (name === "" || email === "" || text === "") {
+                alert("必須項目を入力してください");
+                return;
+            }
 
-        <h3 style="color:#166534;">WAM ITカレッジ 事務局</h3>
+            button.disabled = true;
+            loading.style.display = "block";
 
-        <p id="responseText" style="margin:20px 0; line-height:1.8;"></p>
+            setTimeout(() => {
 
-        <button onclick="closeResponse()" class="btn-primary">
-            閉じる
-        </button>
+                loading.style.display = "none";
 
-    </div>
+                sound.currentTime = 0;
+                sound.play();
 
-</div>
+                if (
+                    text.includes("じゅこうかいしび") ||
+                    text.includes("受講開始日") ||
+                    text.includes("じゅこうかいし") ||
+                    text.includes("受講開始")
+                ) {
+                    responseText.innerHTML =
+                        "内容を確認しました。<br>" +
+                        "現在、担当部署で確認中です。<br><br>" +
+                        "『これは最後の記録。大事に大事に包んで隠しておこう』";
 
-<!-- 音 -->
-<audio id="notifySound" src="sound/oto.mp3" preload="auto"></audio>
+                } else if (text.includes("追加記録")) {
 
-<script>
+					responseText.innerHTML =
+					  "追加記録を受け付けました。<br>" +
+					  "ログシステムに記録しました。<br><br>" +
+					  "<a href='log.html' style='display:inline-block;margin-top:10px;padding:8px 14px;background:#166534;color:white;border-radius:8px;text-decoration:none;'>記録ログを確認する</a>";
 
-function sendForm(){
+                } else {
 
-    const text = document.querySelector("textarea").value;
-    const loading = document.getElementById("loadingText");
-    const box = document.getElementById("responseBox");
-    const responseText = document.getElementById("responseText");
-    const sound = document.getElementById("notifySound");
-    const button = document.querySelector("button[type='button']");
-	const name = document.querySelectorAll("input")[0].value;
-	const email = document.querySelectorAll("input")[1].value;
-	
-	if(name === "" || email === "" || text === ""){
-	    alert("必須項目を入力してください");
-	    return;
-	}
-	
-    button.disabled = true;
-    loading.style.display = "block";
+                    responseText.innerHTML =
+                        "内容を確認しました。<br>担当より後日ご連絡いたします。";
+                }
 
-    setTimeout(() => {
+                box.style.display = "flex";
+                button.disabled = false;
 
-        loading.style.display = "none";
-
-        sound.currentTime = 0;
-        sound.play();
-
-        if(
-            text.includes("じゅこうかいしび") ||
-            text.includes("受講開始日") ||
-            text.includes("じゅこうかいし") ||
-			text.includes("受講開始日") 
-        ){
-            responseText.innerHTML =
-            "内容を確認しました。<br>" + 
-			"現在、担当部署で確認中です。<br><br>" + 
-			"『これは最後の記録。大事に大事に包んでおこう』";
-        } else {
-            responseText.innerHTML =
-            "内容を確認しました。<br>担当より後日ご連絡いたします。";
+            }, 3000);
         }
 
-        box.style.display = "flex";
-        button.disabled = false;
+        function closeResponse() {
+            document.getElementById("responseBox").style.display = "none";
+        }
 
-    }, 3000);
-}
+    </script>
 
-function closeResponse(){
-    document.getElementById("responseBox").style.display = "none";
-}
-
-</script>
-
+	<script>
+		function toggleMenu() {
+		  document.getElementById("navMenu").classList.toggle("active");
+		}
+		</script>
 </body>
 </html>

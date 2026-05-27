@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG RECORD</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background: #f5f7fa;
+            color: #222;
+            font-family: "Yu Gothic", sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            border-left: 8px solid #4d6fff;
+            padding-left: 16px;
+        }
+
+        .sub {
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        details {
+            margin-bottom: 20px;
+            border: 1px solid #d9dfe8;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #fafbfd;
+        }
+
+        summary {
+            cursor: pointer;
+            padding: 18px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            list-style: none;
+            transition: 0.2s;
+        }
+
+            summary:hover {
+                background: #eef3ff;
+            }
+
+        details[open] summary {
+            border-bottom: 1px solid #d9dfe8;
+        }
+
+        .hint-content {
+            padding: 20px;
+            line-height: 1.9;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .small {
+            margin-top: 40px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .warning {
+            margin-top: 30px;
+            padding: 16px;
+            border-radius: 10px;
+            background: #fff4e5;
+            color: #8a5700;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            summary {
+                font-size: 16px;
+            }
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 16px;
+            background: #166534;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>LOG RECORD</h1>
+
+        <p class="sub">
+            未解析記録に対する導きログ。<br>
+            必要時のみ参照すること。
+        </p>
+
+        <!-- STEP1 -->
+        <details>
+            <summary>【1 名札の謎 - 1】「白」</summary>
+
+            <div class="hint-content">
+                白くて、くっつく。<br>
+                教室の中にそんなものあっただろうか。<br>
+                そして小さな違和感を見落としてはならない。
+            </div>
+        </details>
+
+        <!-- STEP2 -->
+        <details>
+            <summary>【2 チラシとサイトの謎 - 1】「名札のメモ」</summary>
+
+            <div class="hint-content">
+                よく見ろ、と書いたメモだが、それを見せて何に気づかせたかったんだろうか。<br>
+                認証、先ほどどこかで見かけたはず。
+            </div>
+        </details>
+
+        <details>
+            <summary>【2 チラシとサイトの謎 - 2】「認証の先」</summary>
+
+            <div class="hint-content">
+                認証後、一番下に気になる言葉を見つけた。<br>
+                この20人目の訓練校生と関係あるのだろうか。
+            </div>
+        </details>
+
+        <details>
+            <summary>【2 チラシとサイトの謎 - 3】「seed」</summary>
+
+            <div class="hint-content">
+                正面だけ見ていてはならない？前には無いということだろう。<br>
+                ということは無意識に既に通り過ぎている？<br>
+            </div>
+        </details>
+
+        <details>
+            <summary>【2 チラシとサイトの謎 - 4】「3桁」</summary>
+
+            <div class="hint-content">
+                3桁の数字にならなかった。<br>
+                この3つをどうにか組み合わせて3桁にする、ということだろう。<br>
+            </div>
+        </details>
+
+        <!-- STEP3 -->
+        <details>
+            <summary>【3 日誌の謎 - 1】</summary>
+
+            <div class="hint-content">
+                どうやらこのクラスの日誌は変だ。<br>
+                書き方に違和感がある。
+            </div>
+        </details>
+
+        <details>
+            <summary>【3 日誌の謎 - 2】</summary>
+
+            <div class="hint-content">
+                二文目だけ、に<br>
+                誰かの手によって下線が引かれている。
+            </div>
+        </details>
+
+        <details>
+            <summary>【3 日誌の謎 - 3】</summary>
+
+            <div class="hint-content">
+                線の引かれた文字、これが重要なんだろう。<br>
+                クロスワードには当てはまらない文字数だ。<br>
+                抜き出して平仮名にしてみるか。
+            </div>
+        </details>
+
+        <details>
+            <summary>【3 日誌の謎 - 4】</summary>
+
+            <div class="hint-content">
+                時系列では意味にならない。<br>
+                こんなに文字の長さはいらないようだ。
+            </div>
+        </details>
+
+        <details>
+            <summary>【3 日誌の謎 - 5】</summary>
+
+            <div class="hint-content">
+                順番を変えてみよう。最後に「 び 」を付けてみるか。
+            </div>
+        </details>
+
+        <details>
+            <summary>【3 日誌の謎 - 6】「この先」</summary>
+
+            <div class="hint-content">
+                この先はどうすればいいんだろう。<br>
+                困ったら誰かにそれだけを聞いてもいいのかもしれない。
+            </div>
+        </details>
+
+
+        <!-- STEP4 -->
+        <details>
+            <summary>【4 最後の謎 - 1】「箱のメモ」</summary>
+            <div class="hint-content">
+                先ほど、「箱を見つけた」というメモがあった。<br>
+                どこかにもう1つ…あるのか？
+            </div>
+        </details>
+
+        <details>
+            <summary>【4 最後の謎 - 2】</summary>
+
+            <div class="hint-content">
+                共に学んだ日々が鍵になる。<br><br>
+
+                この場所で過ごした時間を、
+                忘れてはいけない。
+            </div>
+        </details>
+
+        <details>
+            <summary>【4 最後の謎 - 3】</summary>
+
+            <div class="hint-content">
+                全ての物事には始まりがあり、終わりがある。<br>
+                そして、期限がある。
+            </div>
+        </details>
+
+        <details>
+            <summary>【4 最後の謎 - 4】</summary>
+
+            <div class="hint-content">
+                始まりから終わり、それを数字3桁で表せ。
+            </div>
+        </details>
+
+        <div class="warning">
+            ※ 記録解析が困難な場合のみ閲覧してください。
+        </div>
+
+		<div class="small">
+		LOG STATUS : ACTIVE
+		<br>
+		…NO ENDPOINT FOUND
+		</div>
+
+        <!-- 戻るボタン -->
+        <a href="contact.html" class="back-btn">← お問い合わせに戻る</a>
+
+    </div>
+
+</body>
+
+</html>

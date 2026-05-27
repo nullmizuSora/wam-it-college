@@ -11,11 +11,11 @@
 <body>
 
 <header>
-	<a href="index.html" class="logo">
-	    WAM ITカレッジ
-	</a>
+  <a href="index.html" class="logo">WAM ITカレッジ</a>
 
-  <nav>
+  <button class="hamburger" id="hamburger">☰</button>
+
+  <nav id="navMenu">
     <a href="index.html">ホーム</a>
     <a href="school.html">学校概要</a>
     <a href="subject.html">教育科目</a>
@@ -204,6 +204,12 @@ function sendRequest(){
   }, 4000); // 4秒後
 }
 </script>
+
+<script>
+	function toggleMenu() {
+	  document.getElementById("navMenu").classList.toggle("active");
+	}
+	</script>
 
 </body>
 </html>
