@@ -11,20 +11,23 @@
 <body>
 
 <header>
-	<a href="index.html" class="logo">
-	    WAM ITカレッジ
-	</a>
+  <a href="index.html" class="logo">WAM ITカレッジ</a>
 
-    <nav>
-        <a href="index.html">ホーム</a>
-        <a href="school.html">学校概要</a>
-        <a href="subject.html">教育科目</a>
-        <a href="news.html">ニュース</a>
-        <a href="event.html">イベント</a>
-        <a href="student.html">在校生の皆さんへ</a>
-        <a href="entry.html">入学について</a>
-        <a href="contact.html">お問い合わせ</a>
-    </nav>
+  <button class="hamburger" onclick="toggleMenu()">
+  	    ☰
+  	  </button>
+
+  <nav id="navMenu">
+    <a href="index.html">ホーム</a>
+    <a href="school.html">学校概要</a>
+	<a href="viewport.html">校内写真</a>
+    <a href="subject.html">教育科目</a>
+    <a href="news.html">ニュース</a>
+    <a href="event.html">イベント</a>
+    <a href="student.html">在校生の皆さんへ</a>
+    <a href="entry.html">入学について</a>
+    <a href="contact.html">お問い合わせ</a>
+  </nav>
 </header>
 
 <!--    <span class="news-date">2026.06.18</span>-->
@@ -35,25 +38,119 @@
 
     <h2 class="section-title">イベント・お知らせ</h2>
 
-	
-	<!-- 5/19 -->
+
+	<!-- 5/22 -->
 	<details class="event-card">
 	    <summary>
-	        <span class="event-date">2026.05.19</span>
-	        清掃作業のお知らせ
+	        <span class="event-date">2026.05.22</span>
+	        修了のお知らせ
 	    </summary>
 
 	    <div class="event-content">
+
+<!--	        <p class="alert">-->
+<!--	        <hr style="margin:15px 0; opacity:0.3;">-->
+
+	        <p class="alert">
+	            本日をもって当訓練校の全訓練課程は修了（卒業）となりました。
+	        </p>
+
 	        <p>
-	            清掃作業中につき、一部備品を廊下へ移動しております。
+	            すべての記録整理が完了し、訓練生は各自の進路へと移行します。<br>
+	            長期間のご参加ありがとうございました。
 	        </p>
-			<p>
-	            廊下に備品を忘れていた場合は決して開封しないでください。
+
+	        <p>
+	            ── 記録はここで一度終了します。
 	        </p>
-			
+
 	    </div>
 	</details>
 	
+	<!-- 5/22 -->
+	    <details class="event-card">
+	        <summary>
+	            <span class="event-date">2026.05.22</span>
+	            落とし物のお知らせ
+	        </summary>
+
+	        <div class="event-content">
+			<p>
+	            校内にて見かけない人物の名札を発見いたしました。
+	        </p>
+
+	        <p>
+	            発見された名札は、旧訓練生(2025年11月入校、クラス番号：303)のものと思われます。<br>
+	            旧訓練生19名と誰の名札かの解明作業を行いました。
+			</p>
+			<p>
+				お心当たりのある方は職員までご連絡ください。
+	        </p>
+	        </div>
+	    </details>
+	
+	
+    <!-- 5/21 -->
+    <details class="event-card">
+        <summary>
+            <span class="event-date">2026.05.21</span>
+            導きお問い合わせ窓口のお知らせ
+        </summary>
+
+        <div class="event-content">
+            <p>
+                記録の解析に行き詰った場合、お問い合わせ窓口より追加記録の照合を本日より開始いたしました。
+            </p>
+            <p>
+                対象ワード：「　追加記録　」(空白無し)
+            </p>
+            <p>
+                必要に応じてご利用ください。
+            </p>
+        </div>
+    </details>
+	
+	<!-- 5/20 -->
+		    <details class="event-card">
+		        <summary>
+		            <span class="event-date">2026.05.20</span>
+		            制作課題のお知らせ
+		        </summary>
+
+		        <div class="event-content">
+				<p>
+		            学生が授業で学んだ技術を活かして制作した作品を発表・公開いたしました。
+		        </p>
+
+		        <p>
+		            ● データベースの世界からの脱出を目指し、敵との銃撃戦を繰り広げる3Dアクションゲーム 
+					● 宇宙や道路などを選択し、PCの壁紙として設定できる壁紙アプリ
+				</p>
+				<p>
+					グループごとに分かれ、それぞれ協力して開発を行いました。
+					今後も実践的な作品制作を通じて、プログラミング技術の向上に取り組んでいきます。
+		        </p>
+		        </div>
+		    </details>
+
+    <!-- 5/19 -->
+    <details class="event-card">
+        <summary>
+            <span class="event-date">2026.05.19</span>
+            清掃作業のお知らせ
+        </summary>
+
+        <div class="event-content">
+            <p>
+                清掃作業中につき、一部備品を廊下へ移動しております。
+            </p>
+            <p>
+                廊下に備品を忘れていた場合は決して開封しないでください。
+            </p>
+
+        </div>
+    </details>
+
     <!-- 5/6 クロスワード大会 -->
     <details class="event-card">
         <summary>
@@ -73,27 +170,27 @@
             </p>
 
             <!-- クロスワード風マス目 -->
-            <div class="crossword-grid">
+<!--            <div class="crossword-grid">-->
 
-                <div></div><div></div><div></div><div class="black"></div><div></div>
-                <div></div><div class="black"></div><div></div><div></div><div></div>
-                <div></div><div></div><div></div><div></div><div class="black"></div>
-                <div class="black"></div><div></div><div></div><div></div><div></div>
-                <div></div><div></div><div class="black"></div><div></div><div></div>
+<!--                <div></div><div></div><div></div><div class="black"></div><div></div>-->
+<!--                <div></div><div class="black"></div><div></div><div></div><div></div>-->
+<!--                <div></div><div></div><div></div><div></div><div class="black"></div>-->
+<!--                <div class="black"></div><div></div><div></div><div></div><div></div>-->
+<!--                <div></div><div></div><div class="black"></div><div></div><div></div>-->
 
-            </div>
+<!--            </div>-->
 
             <p>
-                現在も答えの集計活動を行っております。
+                在校生の皆さまからのご要望にお答えし、クロスワード機能の集計システムを復活いたしました。
             </p>
 
             <p>
-                回答受付はお問い合わせ窓口にて受付中です。
-                （受付期間：～5/21まで）
+                クロスワードの回答はお問い合わせ窓口にて受付中です。
+                （受付終了期間：現在未定）
             </p>
 
             <p>
-                当日の優勝者には記念品として箱が贈呈されました。
+                当日の優勝者には記念品として 箱 が贈呈されました。
             </p>
 
         </div>
@@ -123,9 +220,9 @@
         </summary>
 
         <div class="event-content">
-			<p class="alert">
-			    校内周辺にて見かけない人物の目撃情報がありました。
-			</p>
+            <p class="alert">
+                校内周辺にて見かけない人物の目撃情報がありました。
+            </p>
 
             <p>
                 不要な外出を避け、
@@ -133,46 +230,70 @@
             </p>
         </div>
     </details>
-	
-	<!-- 4/11 -->
-	<details class="event-card">
-	    <summary>
-	        <span class="event-date">2026.04.11</span>
-	        動物目撃情報のお知らせ
-	    </summary>
 
-	    <div class="event-content">
-	        <p>
-	            校内で七色に光る大きな鳥が発見されました。
-	        </p>
-			<p>
-				見かけた際は近寄らず、職員までお伝えください。
-			 </p>
-	    </div>
-	</details>
-	
-	<!-- 3/31 -->
-	    <details class="event-card">
-	        <summary>
-	            <span class="event-date">2026.03.31</span>
-	            校内一斉清掃作業のお知らせ
-	        </summary>
+    <!-- 4/16 -->
+    <details class="event-card">
+        <summary>
+            <span class="event-date">2026.04.16</span>
+            カードゲーム大会開催のお知らせと注意喚起
+        </summary>
 
-	        <div class="event-content">
-	            <p>
-	                校内環境整備のため、校内の全訓練生と職員で清掃作業を実施しました。
-	            </p>
-				<p>
-	                参加者全員には学長からうまい棒が配られました。
-	            </p>
-				<p>
-	                まだ受け取っていない生徒が1人いるようですので職員までお伝えください。
-	            </p>
-				
-	        </div>
-	    </details>
-	
-	
+        <div class="event-content">
+            <p>
+                校内でカードゲーム大会が開催されました。
+            </p>
+            <p>
+                今回の大会では、待望の全9種類のカードが登場しました。<br>
+                授業の延長戦のようにプレイしながら仕様確認を行い、<br>
+                ほぼ実戦デバッグ状態でバトルが進行しました。<br>
+            </p>
+            <p>
+                しかしこのゲームは非常に高い中毒症状が出る場合があるため、注意してください。<br>
+                何かありましたら職員、または運営にまでお伝えください。
+            </p>
+        </div>
+    </details>
+
+    <!-- 4/11 -->
+    <details class="event-card">
+        <summary>
+            <span class="event-date">2026.04.11</span>
+            動物目撃情報のお知らせ
+        </summary>
+
+        <div class="event-content">
+            <p>
+                校内で七色に光る大きな鳥：カカポが発見されました。
+            </p>
+            <p>
+                見かけた際は近寄ったり指で吹き飛ばしたりせず、職員、または担当者までお伝えください。
+            </p>
+        </div>
+    </details>
+
+
+    <!-- 3/31 -->
+    <details class="event-card">
+        <summary>
+            <span class="event-date">2026.03.31</span>
+            校内一斉清掃作業のお知らせ
+        </summary>
+
+        <div class="event-content">
+            <p>
+                校内環境整備のため、校内の全訓練生と職員で清掃作業を実施しました。
+            </p>
+            <p>
+                参加者全員には学長から箱で購入したうまい棒が配られました。
+            </p>
+            <p>
+                まだ受け取っていない生徒が1人いるようですので職員までお伝えください。
+            </p>
+
+        </div>
+    </details>
+
+
     <!-- 3/20 -->
     <details class="event-card">
         <summary>
@@ -188,20 +309,20 @@
         </div>
     </details>
 
-	<!-- 3/19 -->
-		<details class="event-card">
-		    <summary>
-		        <span class="event-date">2026.03.19</span>
-		        エレベーター緊急停止について
-		    </summary>
+    <!-- 3/19 -->
+    <details class="event-card">
+        <summary>
+            <span class="event-date">2026.03.19</span>
+            エレベーター緊急停止について
+        </summary>
 
-		    <div class="event-content">
-		        <p>
-		            エレベーターが緊急停止したため、
-		            現在使用できません。
-		        </p>
-		    </div>
-		</details>
+        <div class="event-content">
+            <p>
+                エレベーターが緊急停止したため、
+                現在使用できません。
+            </p>
+        </div>
+    </details>
 
     <!-- 3/15 -->
     <details class="event-card">
@@ -278,6 +399,10 @@
     ※このサイトは個人の制作物であり、実在の教育機関・サービスとは関係ありません。
   </p>
 </footer>
-
+<script>
+	function toggleMenu() {
+	  document.getElementById("navMenu").classList.toggle("active");
+	}
+	</script>
 </body>
 </html>

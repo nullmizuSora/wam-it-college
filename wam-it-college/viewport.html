@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校内写真</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+	  <a href="index.html" class="logo">WAM ITカレッジ</a>
+
+	  <button class="hamburger" onclick="toggleMenu()">
+	  	    ☰
+	  	  </button>
+
+	  <nav id="navMenu">
+	    <a href="index.html">ホーム</a>
+	    <a href="school.html">学校概要</a>
+		<a href="viewport.html">校内写真</a>
+	    <a href="subject.html">教育科目</a>
+	    <a href="news.html">ニュース</a>
+	    <a href="event.html">イベント</a>
+	    <a href="student.html">在校生の皆さんへ</a>
+	    <a href="entry.html">入学について</a>
+	    <a href="contact.html">お問い合わせ</a>
+	  </nav>
+	</header>
+
+<div class="container">
+
+    <h1 class="section-title">校内写真</h1>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>教室</h3>
+            <img src="images/class1.jpg" class="puzzle-img">
+			<img src="images/class4.jpg" class="puzzle-img">
+			<img src="images/class2.jpg" class="puzzle-img">
+			<img src="images/class3.jpg" class="puzzle-img">
+			<img src="images/class5.jpg" class="puzzle-img">
+			<p>授業や実習を行う教室です。集中して学習できる環境が整っています。</p>
+        </div>
+
+        <div class="card">
+            <h3>廊下</h3>
+            <img src="images/rouka0.jpg" class="puzzle-img">
+            <p>学生が移動や休憩に利用する廊下です。</p>
+        </div>
+
+        <div class="card">
+            <h3>廊下の水槽・絵画</h3>
+            <img src="images/rouka.jpg" class="puzzle-img">
+            <p>校内には水槽や絵画が設置され、落ち着いた雰囲気を演出しています。</p>
+        </div>
+
+        <div class="card">
+            <h3>アクセス</h3>
+            <p>
+                当校は ***ビルの中にあります。<br>
+                駅からのアクセスも徒歩10分と良く、通学しやすい立地です。
+            </p>
+			<p>
+			    当校付近には商店街もあり、校長がよく箱で購入するumaibouのお店が多くあります。
+			</p>
+        </div>
+
+    </div>
+
+</div>
+
+<section class="cta-section">
+
+  <div class="cta-content">
+
+    <h2>
+      未来への一歩を、ここから。
+    </h2>
+
+    <p>
+      ITスキルを身につけ、
+      新しいキャリアに挑戦してみませんか？
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="entry.html" class="btn-primary">
+        資料請求はこちら
+      </a>
+
+      <a href="contact.html" class="btn-secondary">
+        お問い合わせ
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>© WAM ITカレッジ</p>
+  <p class="footer-note">
+    ※このサイトは個人の制作物であり、実在の教育機関・サービスとは関係ありません。
+  </p>
+</footer>
+<script>
+	function toggleMenu() {
+	  document.getElementById("navMenu").classList.toggle("active");
+	}
+	</script>
+</body>
+</html>
