@@ -1071,9 +1071,14 @@ nav a:hover{
 }
 
 .entry-container .card{
-    padding:60px;
+    padding:24px;
     margin-bottom:50px;
 }
+
+.entry-container{
+        padding:120px 16px 60px;
+    }
+	
 .entry-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -1382,6 +1387,10 @@ footer{
 /*        padding:20px;*/
 /*    }*/
 
+	header{
+        padding:16px;
+    }
+
     nav{
         margin-top:0px;
     }
@@ -1470,4 +1479,13 @@ footer{
 		       align-items: center;
 		     }
 		   
+			 .entry-container{
+			        padding:120px 16px 60px;
+			    }
+
+			    .entry-container .card{
+			        padding:24px;
+			    }
+
+			 
 }
