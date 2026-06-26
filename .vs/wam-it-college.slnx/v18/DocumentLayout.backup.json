@@ -1,0 +1,114 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\koba4\\source\\repos\\nullmizuSora\\wam-it-college\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\koba4\\source\\repos\\nullmizuSora\\wam-it-college\\wam-it-college\\hidden.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:wam-it-college\\hidden.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\koba4\\source\\repos\\nullmizuSora\\wam-it-college\\wam-it-college\\student.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:wam-it-college\\student.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\koba4\\source\\repos\\nullmizuSora\\wam-it-college\\wam-it-college\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:wam-it-college\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\koba4\\source\\repos\\nullmizuSora\\wam-it-college\\wam-it-college\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:wam-it-college\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 111,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 289,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "contact.html",
+              "DocumentMoniker": "C:\\Users\\koba4\\source\\repos\\nullmizuSora\\wam-it-college\\wam-it-college\\contact.html",
+              "RelativeDocumentMoniker": "wam-it-college\\contact.html",
+              "ToolTip": "C:\\Users\\koba4\\source\\repos\\nullmizuSora\\wam-it-college\\wam-it-college\\contact.html",
+              "RelativeToolTip": "wam-it-college\\contact.html",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAmwI8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-21T14:37:38.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\koba4\\source\\repos\\nullmizuSora\\wam-it-college\\wam-it-college\\.gitignore",
+              "RelativeDocumentMoniker": "wam-it-college\\.gitignore",
+              "ToolTip": "C:\\Users\\koba4\\source\\repos\\nullmizuSora\\wam-it-college\\wam-it-college\\.gitignore",
+              "RelativeToolTip": "wam-it-college\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-21T16:05:43.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "student.html",
+              "DocumentMoniker": "C:\\Users\\koba4\\source\\repos\\nullmizuSora\\wam-it-college\\wam-it-college\\student.html",
+              "RelativeDocumentMoniker": "wam-it-college\\student.html",
+              "ToolTip": "C:\\Users\\koba4\\source\\repos\\nullmizuSora\\wam-it-college\\wam-it-college\\student.html",
+              "RelativeToolTip": "wam-it-college\\student.html",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-27T13:22:49.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "hidden.html",
+              "DocumentMoniker": "C:\\Users\\koba4\\source\\repos\\nullmizuSora\\wam-it-college\\wam-it-college\\hidden.html",
+              "RelativeDocumentMoniker": "wam-it-college\\hidden.html",
+              "ToolTip": "C:\\Users\\koba4\\source\\repos\\nullmizuSora\\wam-it-college\\wam-it-college\\hidden.html",
+              "RelativeToolTip": "wam-it-college\\hidden.html",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAGkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-27T13:28:08.735Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
